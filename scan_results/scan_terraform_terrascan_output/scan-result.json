@@ -1,0 +1,1065 @@
+{
+  "results": {
+    "scan_errors": [
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/terraform/aws",
+        "errMsg": "diagnostic errors while loading terraform config dir '/terraform/terraform/aws'. error from terraform:\n/terraform/terraform/aws/consts.tf:29,13-21: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n/terraform/terraform/aws/consts.tf:34,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n/terraform/terraform/aws/consts.tf:40,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n/terraform/terraform/aws/consts.tf:46,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n/terraform/terraform/aws/db-app.tf:40,23-33: Quoted references are deprecated; In this context, references are expected literally rather than in quotes. Terraform 0.11 and earlier required quotes, but quoted references are now deprecated and will be removed in a future version of Terraform. Remove the quotes surrounding this reference to silence this warning.\n/terraform/terraform/aws/eks.tf:128,5-78: Quoted references are deprecated; In this context, references are expected literally rather than in quotes. Terraform 0.11 and earlier required quotes, but quoted references are now deprecated and will be removed in a future version of Terraform. Remove the quotes surrounding this reference to silence this warning.\n/terraform/terraform/aws/eks.tf:129,5-78: Quoted references are deprecated; In this context, references are expected literally rather than in quotes. Terraform 0.11 and earlier required quotes, but quoted references are now deprecated and will be removed in a future version of Terraform. Remove the quotes surrounding this reference to silence this warning.\n"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform",
+        "errMsg": "directory '/terraform' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/gitlabci",
+        "errMsg": "directory '/terraform/gitlabci' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/output",
+        "errMsg": "directory '/terraform/output' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/packages",
+        "errMsg": "directory '/terraform/packages' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/packages/node",
+        "errMsg": "directory '/terraform/packages/node' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/packages/node/base",
+        "errMsg": "directory '/terraform/packages/node/base' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/packages/node/twistcli_test",
+        "errMsg": "directory '/terraform/packages/node/twistcli_test' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/packages/sub",
+        "errMsg": "directory '/terraform/packages/sub' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/templates",
+        "errMsg": "directory '/terraform/templates' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/templates/util",
+        "errMsg": "directory '/terraform/templates/util' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/terraform",
+        "errMsg": "directory '/terraform/terraform' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "/terraform/terraform/aws/resources",
+        "errMsg": "directory '/terraform/terraform/aws/resources' has no terraform config files"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/.github/workflows",
+        "errMsg": "error while loading iac file '/terraform/.github/workflows/build.yaml', err: failed to find valid Resources key in file: /terraform/.github/workflows/build.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/.github/workflows",
+        "errMsg": "error while loading iac file '/terraform/.github/workflows/pull_request.yaml', err: failed to find valid Resources key in file: /terraform/.github/workflows/pull_request.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/.github/workflows",
+        "errMsg": "error while loading iac file '/terraform/.github/workflows/semgrep.yml', err: failed to find valid Resources key in file: /terraform/.github/workflows/semgrep.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform",
+        "errMsg": "error while loading iac file '/terraform/azure-pipelines.yml', err: failed to find valid Resources key in file: /terraform/azure-pipelines.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/gitlabci",
+        "errMsg": "error while loading iac file '/terraform/gitlabci/bla.yml', err: failed to find valid Resources key in file: /terraform/gitlabci/bla.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform",
+        "errMsg": "error while loading iac file '/terraform/package-lock.json', err: failed to find valid Resources key in file: /terraform/package-lock.json"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/packages/node/base",
+        "errMsg": "error while loading iac file '/terraform/packages/node/base/dep.txt', err: error while unmarshalling yaml, error yaml: unmarshal errors:\n  line 1: cannot unmarshal !!str `angular...` into map[interface {}]interface {}"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/packages/node/base",
+        "errMsg": "error while loading iac file '/terraform/packages/node/base/package-lock.json', err: failed to find valid Resources key in file: /terraform/packages/node/base/package-lock.json"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/packages/node/base",
+        "errMsg": "error while loading iac file '/terraform/packages/node/base/package.json', err: failed to find valid Resources key in file: /terraform/packages/node/base/package.json"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/packages/node/twistcli_test",
+        "errMsg": "error while loading iac file '/terraform/packages/node/twistcli_test/package-lock.json', err: failed to find valid Resources key in file: /terraform/packages/node/twistcli_test/package-lock.json"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/packages/node/twistcli_test",
+        "errMsg": "error while loading iac file '/terraform/packages/node/twistcli_test/package.json', err: failed to find valid Resources key in file: /terraform/packages/node/twistcli_test/package.json"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/packages",
+        "errMsg": "error while loading iac file '/terraform/packages/requirements.txt', err: error while unmarshalling yaml, error yaml: unmarshal errors:\n  line 1: cannot unmarshal !!str `django=...` into map[interface {}]interface {}"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/packages/sub/.hidden",
+        "errMsg": "error while loading iac file '/terraform/packages/sub/.hidden/requirements.txt', err: error while unmarshalling yaml, error yaml: unmarshal errors:\n  line 1: cannot unmarshal !!str `django=...` into map[interface {}]interface {}"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/templates",
+        "errMsg": "error while loading iac file '/terraform/templates/checkov.yml', err: failed to find valid Resources key in file: /terraform/templates/checkov.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/templates",
+        "errMsg": "error while loading iac file '/terraform/templates/semgrep.yml', err: failed to find valid Resources key in file: /terraform/templates/semgrep.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/templates",
+        "errMsg": "error while loading iac file '/terraform/templates/terrascan.yml', err: failed to find valid Resources key in file: /terraform/templates/terrascan.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/templates",
+        "errMsg": "error while loading iac file '/terraform/templates/tfsec.yml', err: failed to find valid Resources key in file: /terraform/templates/tfsec.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/templates/util",
+        "errMsg": "error while loading iac file '/terraform/templates/util/copy-files.yml', err: failed to find valid Resources key in file: /terraform/templates/util/copy-files.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/templates/util",
+        "errMsg": "error while loading iac file '/terraform/templates/util/create-output-folder.yml', err: failed to find valid Resources key in file: /terraform/templates/util/create-output-folder.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "/terraform/templates/util",
+        "errMsg": "error while loading iac file '/terraform/templates/util/publish-files.yml', err: failed to find valid Resources key in file: /terraform/templates/util/publish-files.yml"
+      },
+      {
+        "iac_type": "kustomize",
+        "directory": "/terraform",
+        "errMsg": "kustomization.y(a)ml file not found in the directory /terraform"
+      },
+      {
+        "iac_type": "helm",
+        "directory": "/terraform",
+        "errMsg": "no helm charts found in directory /terraform"
+      }
+    ],
+    "violations": [
+      {
+        "rule_name": "networkPolicyEnabled",
+        "description": "Ensure AKS cluster has Network Policy configured.",
+        "rule_id": "AC_AZURE_0158",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "k8s_cluster",
+        "resource_type": "azurerm_kubernetes_cluster",
+        "module_name": "root",
+        "file": "terraform/azure/aks.tf",
+        "plan_root": "terraform/azure",
+        "line": 1
+      },
+      {
+        "rule_name": "reme_sqlServerADAdminConfigured",
+        "description": "Ensure that Azure Active Directory Admin is configured for SQL Server",
+        "rule_id": "AC_AZURE_0378",
+        "severity": "HIGH",
+        "category": "Identity and Access Management",
+        "resource_name": "example",
+        "resource_type": "azurerm_sql_server",
+        "module_name": "root",
+        "file": "terraform/azure/sql.tf",
+        "plan_root": "terraform/azure",
+        "line": 9
+      },
+      {
+        "rule_name": "reme_geoRedundancyDisabled",
+        "description": "Ensure that Geo Redundant Backups is enabled on PostgreSQL",
+        "rule_id": "AC_AZURE_0407",
+        "severity": "MEDIUM",
+        "category": "Resilience",
+        "resource_name": "example",
+        "resource_type": "azurerm_postgresql_server",
+        "module_name": "root",
+        "file": "terraform/azure/sql.tf",
+        "plan_root": "terraform/azure",
+        "line": 73
+      },
+      {
+        "rule_name": "reme_sslEnforceDisabled",
+        "description": "Ensure 'Enforce SSL connection' is set to 'ENABLED' for PostgreSQL Database Server",
+        "rule_id": "AC_AZURE_0408",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "example",
+        "resource_type": "azurerm_postgresql_server",
+        "module_name": "root",
+        "file": "terraform/azure/sql.tf",
+        "plan_root": "terraform/azure",
+        "line": 73
+      },
+      {
+        "rule_name": "kubeDashboardDisabled",
+        "description": "Ensure Kube Dashboard is disabled",
+        "rule_id": "AC_AZURE_0161",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "k8s_cluster",
+        "resource_type": "azurerm_kubernetes_cluster",
+        "module_name": "root",
+        "file": "terraform/azure/aks.tf",
+        "plan_root": "terraform/azure",
+        "line": 1
+      },
+      {
+        "rule_name": "reme_noSecurityGroupAssociated",
+        "description": "Ensure that Azure Virtual Network subnet is configured with a Network Security Group",
+        "rule_id": "AC_AZURE_0356",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "example",
+        "resource_type": "azurerm_subnet",
+        "module_name": "root",
+        "file": "terraform/azure/networking.tf",
+        "plan_root": "terraform/azure",
+        "line": 18
+      },
+      {
+        "rule_name": "reme_resourceGroupLock",
+        "description": "Ensure that Azure Resource Group has resource lock enabled",
+        "rule_id": "AC_AZURE_0389",
+        "severity": "LOW",
+        "category": "Identity and Access Management",
+        "resource_name": "example",
+        "resource_type": "azurerm_resource_group",
+        "module_name": "root",
+        "file": "terraform/azure/resource_group.tf",
+        "plan_root": "terraform/azure",
+        "line": 1
+      },
+      {
+        "rule_name": "sslConnectionEnabled",
+        "description": "Ensure 'Enforce SSL connection' is set to 'ENABLED' for MySQL Database Server.",
+        "rule_id": "AC_AZURE_0131",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "example",
+        "resource_type": "azurerm_mysql_server",
+        "module_name": "root",
+        "file": "terraform/azure/sql.tf",
+        "plan_root": "terraform/azure",
+        "line": 44
+      },
+      {
+        "rule_name": "reme_keyVaultAuditLoggingEnabled",
+        "description": "Ensure that logging for Azure KeyVault is 'Enabled'",
+        "rule_id": "AC_AZURE_0169",
+        "severity": "HIGH",
+        "category": "Logging and Monitoring",
+        "resource_name": "example",
+        "resource_type": "azurerm_key_vault",
+        "module_name": "root",
+        "file": "terraform/azure/key_vault.tf",
+        "plan_root": "terraform/azure",
+        "line": 1
+      },
+      {
+        "rule_name": "reme_appGatewayWAFEnabled",
+        "description": "Ensure Azure Application Gateway Web application firewall (WAF) is enabled",
+        "rule_id": "AC_AZURE_0189",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "network",
+        "resource_type": "azurerm_application_gateway",
+        "module_name": "root",
+        "file": "terraform/azure/application_gateway.tf",
+        "plan_root": "terraform/azure",
+        "line": 1
+      },
+      {
+        "rule_name": "reme_securityCenterPricingTier",
+        "description": "Ensure that standard pricing tiers are selected",
+        "rule_id": "AC_AZURE_0385",
+        "severity": "MEDIUM",
+        "category": "Security Best Practices",
+        "resource_name": "pricing",
+        "resource_type": "azurerm_security_center_subscription_pricing",
+        "module_name": "root",
+        "file": "terraform/azure/security_center.tf",
+        "plan_root": "terraform/azure",
+        "line": 1
+      },
+      {
+        "rule_name": "reme_networkWatcherEnabled",
+        "description": "Enable Network Watcher for Azure subscriptions. Network diagnostic and visualization tools available with Network Watcher help users understand, diagnose, and gain insights to the network in Azure.",
+        "rule_id": "AC_AZURE_0418",
+        "severity": "HIGH",
+        "category": "Logging and Monitoring",
+        "resource_name": "flow_log",
+        "resource_type": "azurerm_network_watcher_flow_log",
+        "module_name": "root",
+        "file": "terraform/azure/networking.tf",
+        "plan_root": "terraform/azure",
+        "line": 125
+      },
+      {
+        "rule_name": "reme_connectionThrottling",
+        "description": "Ensure server parameter 'connection_throttling' is set to 'ON' for PostgreSQL Database Server",
+        "rule_id": "AC_AZURE_0414",
+        "severity": "MEDIUM",
+        "category": "Logging and Monitoring",
+        "resource_name": "thrtottling_config",
+        "resource_type": "azurerm_postgresql_configuration",
+        "module_name": "root",
+        "file": "terraform/azure/sql.tf",
+        "plan_root": "terraform/azure",
+        "line": 98
+      },
+      {
+        "rule_name": "postgreSqlLogsEnabled",
+        "description": "Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server",
+        "rule_id": "AC_AZURE_0409",
+        "severity": "MEDIUM",
+        "category": "Logging and Monitoring",
+        "resource_name": "example",
+        "resource_type": "azurerm_postgresql_configuration",
+        "module_name": "root",
+        "file": "terraform/azure/sql.tf",
+        "plan_root": "terraform/azure",
+        "line": 105
+      },
+      {
+        "rule_name": "iamUserInlinePolicy",
+        "description": "Ensure IAM policies are attached only to groups or roles",
+        "rule_id": "AC_AWS_0475",
+        "severity": "MEDIUM",
+        "category": "Identity and Access Management",
+        "resource_name": "userpolicy",
+        "resource_type": "aws_iam_user_policy",
+        "module_name": "root",
+        "file": "terraform/aws/iam.tf",
+        "plan_root": "terraform/aws",
+        "line": 25
+      },
+      {
+        "rule_name": "s3Versioning",
+        "description": "Enabling S3 versioning will enable easy recovery from both unintended user actions, like deletes and overwrites",
+        "rule_id": "AC_AWS_0214",
+        "severity": "HIGH",
+        "category": "Resilience",
+        "resource_name": "data",
+        "resource_type": "aws_s3_bucket",
+        "module_name": "root",
+        "file": "terraform/aws/s3.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "s3Versioning",
+        "description": "Enabling S3 versioning will enable easy recovery from both unintended user actions, like deletes and overwrites",
+        "rule_id": "AC_AWS_0214",
+        "severity": "HIGH",
+        "category": "Resilience",
+        "resource_name": "financials",
+        "resource_type": "aws_s3_bucket",
+        "module_name": "root",
+        "file": "terraform/aws/s3.tf",
+        "plan_root": "terraform/aws",
+        "line": 42
+      },
+      {
+        "rule_name": "s3Versioning",
+        "description": "Enabling S3 versioning will enable easy recovery from both unintended user actions, like deletes and overwrites",
+        "rule_id": "AC_AWS_0214",
+        "severity": "HIGH",
+        "category": "Resilience",
+        "resource_name": "flowbucket",
+        "resource_type": "aws_s3_bucket",
+        "module_name": "root",
+        "file": "terraform/aws/ec2.tf",
+        "plan_root": "terraform/aws",
+        "line": 271
+      },
+      {
+        "rule_name": "vpcFlowLogsNotEnabled",
+        "description": "Ensure VPC flow logging is enabled in all VPCs",
+        "rule_id": "AC_AWS_0369",
+        "severity": "LOW",
+        "category": "Logging and Monitoring",
+        "resource_name": "eks_vpc",
+        "resource_type": "aws_vpc",
+        "module_name": "root",
+        "file": "terraform/aws/eks.tf",
+        "plan_root": "terraform/aws",
+        "line": 44
+      },
+      {
+        "rule_name": "port22OpenToInternet",
+        "description": "Security Groups - Unrestricted Specific Ports - (SSH,22)",
+        "rule_id": "AC_AWS_0227",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "web-node",
+        "resource_type": "aws_security_group",
+        "module_name": "root",
+        "file": "terraform/aws/ec2.tf",
+        "plan_root": "terraform/aws",
+        "line": 77
+      },
+      {
+        "rule_name": "esloggingdisabled",
+        "description": "Ensure that your AWS Elasticsearch clusters have enabled the support for publishing slow logs to AWS CloudWatch Logs. This feature enables you to publish slow logs from the indexing and search operations performed on your ES clusters and gain full insight into the performance of these operations.",
+        "rule_id": "AC_AWS_0105",
+        "severity": "MEDIUM",
+        "category": "Compliance Validation",
+        "resource_name": "monitoring-framework",
+        "resource_type": "aws_elasticsearch_domain",
+        "module_name": "root",
+        "file": "terraform/aws/es.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "rdsHasStorageEncrypted",
+        "description": "Ensure that your RDS database instances encrypt the underlying storage. Encrypted RDS instances use the industry standard AES-256 encryption algorithm to encrypt data on the server that hosts RDS DB instances. After data is encrypted, RDS handles authentication of access and description of data transparently with minimal impact on performance.",
+        "rule_id": "AC_AWS_0058",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "default",
+        "resource_type": "aws_db_instance",
+        "module_name": "root",
+        "file": "terraform/aws/db-app.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "eksControlPlaneLoggingDisabled",
+        "description": "Ensure EKS clusters have control plane logging enabled.",
+        "rule_id": "AC_AWS_0465",
+        "severity": "MEDIUM",
+        "category": "Logging and Monitoring",
+        "resource_name": "eks_cluster",
+        "resource_type": "aws_eks_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/eks.tf",
+        "plan_root": "terraform/aws",
+        "line": 118
+      },
+      {
+        "rule_name": "neptuneClusterLoggingDisabled",
+        "description": "Ensure AWS Neptune clusters have logging enabled.",
+        "rule_id": "AC_AWS_0494",
+        "severity": "MEDIUM",
+        "category": "Logging and Monitoring",
+        "resource_name": "default",
+        "resource_type": "aws_neptune_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/neptune.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "elbLbProtocolNotSecured",
+        "description": "AWS ELB incoming traffic not encrypted",
+        "rule_id": "AC_AWS_0120",
+        "severity": "LOW",
+        "category": "Infrastructure Security",
+        "resource_name": "weblb",
+        "resource_type": "aws_elb",
+        "module_name": "root",
+        "file": "terraform/aws/elb.tf",
+        "plan_root": "terraform/aws",
+        "line": 2
+      },
+      {
+        "rule_name": "programmaticAccessCreation",
+        "description": "Ensure that there are no exposed Amazon IAM access keys in order to protect your AWS resources against unapproved access",
+        "rule_id": "AC_AWS_0133",
+        "severity": "MEDIUM",
+        "category": "Identity and Access Management",
+        "resource_name": "user",
+        "resource_type": "aws_iam_access_key",
+        "module_name": "root",
+        "file": "terraform/aws/iam.tf",
+        "plan_root": "terraform/aws",
+        "line": 21
+      },
+      {
+        "rule_name": "port80OpenToInternet",
+        "description": "Security Groups - Unrestricted Specific Ports - (HTTP,80)",
+        "rule_id": "AC_AWS_0228",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "web-node",
+        "resource_type": "aws_security_group",
+        "module_name": "root",
+        "file": "terraform/aws/ec2.tf",
+        "plan_root": "terraform/aws",
+        "line": 77
+      },
+      {
+        "rule_name": "notEncryptedObject",
+        "description": "Ensure S3 object is Encrypted",
+        "rule_id": "AC_AWS_0498",
+        "severity": "MEDIUM",
+        "category": "Data Protection",
+        "resource_name": "data_object",
+        "resource_type": "aws_s3_bucket_object",
+        "module_name": "root",
+        "file": "terraform/aws/s3.tf",
+        "plan_root": "terraform/aws",
+        "line": 23
+      },
+      {
+        "rule_name": "elastiSearchEncryptAtRest",
+        "description": "Enable AWS ElasticSearch Encryption At Rest",
+        "rule_id": "AC_AWS_0112",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "monitoring-framework",
+        "resource_type": "aws_elasticsearch_domain",
+        "module_name": "root",
+        "file": "terraform/aws/es.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "elbAccessLoggingDisabled",
+        "description": "Ensure AWS ELB has access logging enabled.",
+        "rule_id": "AC_AWS_0470",
+        "severity": "MEDIUM",
+        "category": "Logging and Monitoring",
+        "resource_name": "weblb",
+        "resource_type": "aws_elb",
+        "module_name": "root",
+        "file": "terraform/aws/elb.tf",
+        "plan_root": "terraform/aws",
+        "line": 2
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app1-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app2-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 17
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app3-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 33
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app4-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 49
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app5-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 65
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app6-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 81
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app7-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 97
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app8-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 113
+      },
+      {
+        "rule_name": "storageNotEncrypted",
+        "description": "Encrypt Amazon RDS instances and snapshots at rest, by enabling the encryption option for your Amazon RDS DB instance",
+        "rule_id": "AC_AWS_0186",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "app9-rds-cluster",
+        "resource_type": "aws_rds_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/rds.tf",
+        "plan_root": "terraform/aws",
+        "line": 130
+      },
+      {
+        "rule_name": "lambdaXRayTracingDisabled",
+        "description": "Lambda tracing is not enabled.",
+        "rule_id": "AC_AWS_0485",
+        "severity": "LOW",
+        "category": "Logging and Monitoring",
+        "resource_name": "analysis_lambda",
+        "resource_type": "aws_lambda_function",
+        "module_name": "root",
+        "file": "terraform/aws/lambda.tf",
+        "plan_root": "terraform/aws",
+        "line": 32
+      },
+      {
+        "rule_name": "detailedMonitoringEnabledInstance",
+        "description": "Ensure that detailed monitoring is enabled for EC2 instances.",
+        "rule_id": "AC_AWS_0480",
+        "severity": "HIGH",
+        "category": "Logging and Monitoring",
+        "resource_name": "db_app",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform/aws/db-app.tf",
+        "plan_root": "terraform/aws",
+        "line": 243
+      },
+      {
+        "rule_name": "detailedMonitoringEnabledInstance",
+        "description": "Ensure that detailed monitoring is enabled for EC2 instances.",
+        "rule_id": "AC_AWS_0480",
+        "severity": "HIGH",
+        "category": "Logging and Monitoring",
+        "resource_name": "web_host",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform/aws/ec2.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "kmsKeyRotationDisabled",
+        "description": "Ensure rotation for customer created CMKs is enabled",
+        "rule_id": "AC_AWS_0160",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "logs_key",
+        "resource_type": "aws_kms_key",
+        "module_name": "root",
+        "file": "terraform/aws/kms.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "ebsSnapshotDisabled",
+        "description": "Enable AWS EBS Snapshot Encryption",
+        "rule_id": "AC_AWS_0459",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "web_host_storage",
+        "resource_type": "aws_ebs_volume",
+        "module_name": "root",
+        "file": "terraform/aws/ec2.tf",
+        "plan_root": "terraform/aws",
+        "line": 34
+      },
+      {
+        "rule_name": "noNodeToNodeEncryptionDomain",
+        "description": "Ensure Elasticsearch domains being created are set to be encrypted node-to-node",
+        "rule_id": "AC_AWS_0468",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "monitoring-framework",
+        "resource_type": "aws_elasticsearch_domain",
+        "module_name": "root",
+        "file": "terraform/aws/es.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "ecrNoSecurePolicyAttached",
+        "description": "Ensure ECR repository has policy attached.",
+        "rule_id": "AC_AWS_0462",
+        "severity": "MEDIUM",
+        "category": "Identity and Access Management",
+        "resource_name": "repository",
+        "resource_type": "aws_ecr_repository",
+        "module_name": "root",
+        "file": "terraform/aws/ecr.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "ec2UsingIMDSv1",
+        "description": "EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain",
+        "rule_id": "AC_AWS_0479",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "db_app",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform/aws/db-app.tf",
+        "plan_root": "terraform/aws",
+        "line": 243
+      },
+      {
+        "rule_name": "ec2UsingIMDSv1",
+        "description": "EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain",
+        "rule_id": "AC_AWS_0479",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "web_host",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform/aws/ec2.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "ecrNotEncrypted",
+        "description": "Ensure ECR repository is encrypted at rest",
+        "rule_id": "AC_AWS_0461",
+        "severity": "MEDIUM",
+        "category": "Data Protection",
+        "resource_name": "repository",
+        "resource_type": "aws_ecr_repository",
+        "module_name": "root",
+        "file": "terraform/aws/ecr.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "neptuneClusterNotEncrypted",
+        "description": "Ensure Neptune Cluster is Encrypted",
+        "rule_id": "AC_AWS_0493",
+        "severity": "MEDIUM",
+        "category": "Data Protection",
+        "resource_name": "default",
+        "resource_type": "aws_neptune_cluster",
+        "module_name": "root",
+        "file": "terraform/aws/neptune.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "rdsBackupDisabled",
+        "description": "Ensure automated backups are enabled for AWS RDS instances",
+        "rule_id": "AC_AWS_0052",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "default",
+        "resource_type": "aws_db_instance",
+        "module_name": "root",
+        "file": "terraform/aws/db-app.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "rdsLogExportDisabled",
+        "description": "Ensure CloudWatch logging is enabled for AWS DB instances",
+        "rule_id": "AC_AWS_0454",
+        "severity": "MEDIUM",
+        "category": "Logging and Monitoring",
+        "resource_name": "default",
+        "resource_type": "aws_db_instance",
+        "module_name": "root",
+        "file": "terraform/aws/db-app.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "rdsPubliclyAccessible",
+        "description": "RDS Instance publicly_accessible flag is true",
+        "rule_id": "AC_AWS_0054",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "default",
+        "resource_type": "aws_db_instance",
+        "module_name": "root",
+        "file": "terraform/aws/db-app.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "lambdaNotEncryptedWithKms",
+        "description": "Lambda does not use KMS CMK key to protect environment variables.",
+        "rule_id": "AC_AWS_0483",
+        "severity": "HIGH",
+        "category": "Data Protection",
+        "resource_name": "analysis_lambda",
+        "resource_type": "aws_lambda_function",
+        "module_name": "root",
+        "file": "terraform/aws/lambda.tf",
+        "plan_root": "terraform/aws",
+        "line": 32
+      },
+      {
+        "rule_name": "lambdaNotInVpc",
+        "description": "Lambda function does not include a VPC configuration.",
+        "rule_id": "AC_AWS_0486",
+        "severity": "LOW",
+        "category": "Infrastructure Security",
+        "resource_name": "analysis_lambda",
+        "resource_type": "aws_lambda_function",
+        "module_name": "root",
+        "file": "terraform/aws/lambda.tf",
+        "plan_root": "terraform/aws",
+        "line": 32
+      },
+      {
+        "rule_name": "rdsIamAuthEnabled",
+        "description": "Ensure that your RDS database has IAM Authentication enabled.",
+        "rule_id": "AC_AWS_0053",
+        "severity": "MEDIUM",
+        "category": "Data Protection",
+        "resource_name": "default",
+        "resource_type": "aws_db_instance",
+        "module_name": "root",
+        "file": "terraform/aws/db-app.tf",
+        "plan_root": "terraform/aws",
+        "line": 1
+      },
+      {
+        "rule_name": "vmEncryptedwithCsek",
+        "description": "Ensure VM disks for critical VMs are encrypted with Customer Supplied Encryption Keys (CSEK) .",
+        "rule_id": "AC_GCP_0229",
+        "severity": "MEDIUM",
+        "category": "Data Protection",
+        "resource_name": "unencrypted_disk",
+        "resource_type": "google_compute_disk",
+        "module_name": "root",
+        "file": "terraform/gcp/instances.tf",
+        "plan_root": "terraform/gcp",
+        "line": 36
+      },
+      {
+        "rule_name": "bqDatasetPubliclyAccessible",
+        "description": "BigQuery datasets may be anonymously or publicly accessible.",
+        "rule_id": "AC_GCP_0230",
+        "severity": "HIGH",
+        "category": "Identity and Access Management",
+        "resource_name": "dataset",
+        "resource_type": "google_bigquery_dataset",
+        "module_name": "root",
+        "file": "terraform/gcp/big_data.tf",
+        "plan_root": "terraform/gcp",
+        "line": 21
+      },
+      {
+        "rule_name": "checkIpForward",
+        "description": "Ensure IP forwarding is not enabled on Instances.",
+        "rule_id": "AC_GCP_0232",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "server",
+        "resource_type": "google_compute_instance",
+        "module_name": "root",
+        "file": "terraform/gcp/instances.tf",
+        "plan_root": "terraform/gcp",
+        "line": 3
+      },
+      {
+        "rule_name": "backupConfigEnabled",
+        "description": "Ensure all Cloud SQL database instance have backup configuration enabled.",
+        "rule_id": "AC_GCP_0001",
+        "severity": "HIGH",
+        "category": "Resilience",
+        "resource_name": "master_instance",
+        "resource_type": "google_sql_database_instance",
+        "module_name": "root",
+        "file": "terraform/gcp/big_data.tf",
+        "plan_root": "terraform/gcp",
+        "line": 1
+      },
+      {
+        "rule_name": "checkPubliclyAccessible",
+        "description": "Ensure that Cloud Storage bucket is not anonymously or publicly accessible.",
+        "rule_id": "AC_GCP_0237",
+        "severity": "MEDIUM",
+        "category": "Identity and Access Management",
+        "resource_name": "allow_public_read",
+        "resource_type": "google_storage_bucket_iam_binding",
+        "module_name": "root",
+        "file": "terraform/gcp/gcs.tf",
+        "plan_root": "terraform/gcp",
+        "line": 17
+      },
+      {
+        "rule_name": "checkRequireSSLEnabled",
+        "description": "Ensure that Cloud SQL database instance requires all incoming connections to use SSL",
+        "rule_id": "AC_GCP_0003",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "master_instance",
+        "resource_type": "google_sql_database_instance",
+        "module_name": "root",
+        "file": "terraform/gcp/big_data.tf",
+        "plan_root": "terraform/gcp",
+        "line": 1
+      },
+      {
+        "rule_name": "stackDriverLoggingEnabled",
+        "description": "Ensure Stackdriver Logging is enabled on Kubernetes Engine Clusters.",
+        "rule_id": "AC_GCP_0030",
+        "severity": "HIGH",
+        "category": "Logging and Monitoring",
+        "resource_name": "workload_cluster",
+        "resource_type": "google_container_cluster",
+        "module_name": "root",
+        "file": "terraform/gcp/gke.tf",
+        "plan_root": "terraform/gcp",
+        "line": 6
+      },
+      {
+        "rule_name": "cosNodeImageUsed",
+        "description": "Ensure Container-Optimized OS (cos) is used for Kubernetes Engine Clusters Node image.",
+        "rule_id": "AC_GCP_0016",
+        "severity": "HIGH",
+        "category": "Compliance Validation",
+        "resource_name": "custom_node_pool",
+        "resource_type": "google_container_node_pool",
+        "module_name": "root",
+        "file": "terraform/gcp/gke.tf",
+        "plan_root": "terraform/gcp",
+        "line": 24
+      },
+      {
+        "rule_name": "uniformBucketEnabled",
+        "description": "Ensure that Cloud Storage buckets have uniform bucket-level access enabled.",
+        "rule_id": "AC_GCP_0234",
+        "severity": "MEDIUM",
+        "category": "Identity and Access Management",
+        "resource_name": "terragoat_website",
+        "resource_type": "google_storage_bucket",
+        "module_name": "root",
+        "file": "terraform/gcp/gcs.tf",
+        "plan_root": "terraform/gcp",
+        "line": 1
+      },
+      {
+        "rule_name": "stackDriverMonitoringEnabled",
+        "description": "Ensure Stackdriver Monitoring is enabled on Kubernetes Engine Clusters.",
+        "rule_id": "AC_GCP_0029",
+        "severity": "HIGH",
+        "category": "Logging and Monitoring",
+        "resource_name": "workload_cluster",
+        "resource_type": "google_container_cluster",
+        "module_name": "root",
+        "file": "terraform/gcp/gke.tf",
+        "plan_root": "terraform/gcp",
+        "line": 6
+      },
+      {
+        "rule_name": "legacyAuthEnabled",
+        "description": "Ensure Legacy Authorization is set to disabled on Kubernetes Engine Clusters.",
+        "rule_id": "AC_GCP_0028",
+        "severity": "HIGH",
+        "category": "Identity and Access Management",
+        "resource_name": "workload_cluster",
+        "resource_type": "google_container_cluster",
+        "module_name": "root",
+        "file": "terraform/gcp/gke.tf",
+        "plan_root": "terraform/gcp",
+        "line": 6
+      }
+    ],
+    "skipped_violations": null,
+    "scan_summary": {
+      "file/folder": "/terraform",
+      "iac_type": "docker,terraform",
+      "scanned_at": "2023-07-13 15:04:48.802845762 +0000 UTC",
+      "policies_validated": 497,
+      "violated_policies": 67,
+      "low": 5,
+      "medium": 27,
+      "high": 35
+    }
+  }
+}
