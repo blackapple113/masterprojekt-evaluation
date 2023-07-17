@@ -60,4 +60,8 @@ semgrep_fc_path = semgrep_fc[["path"]]
 semgrep_fc_files = semgrep_fc_path.merge(semgrep_line_numbers_list_series, left_index=True, right_index=True)
 display(semgrep_fc_files)
 
+
+#### terrascan ####
+
+
 # %%
