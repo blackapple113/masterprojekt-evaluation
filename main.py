@@ -52,7 +52,7 @@ semgrep_line_numbers = semgrep_fc[["start.line", "end.line"]]
 semgrep_line_numbers_list = []
 
 for i, row in semgrep_line_numbers.iterrows():
-    semgrep_line_numbers_list.append([row[0], row[1]+1])
+    semgrep_line_numbers_list.append([row[0], row[1]])
 
 semgrep_line_numbers_list_series = pd.Series(semgrep_line_numbers_list, name="file_line_range")
 
