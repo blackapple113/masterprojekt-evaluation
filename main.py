@@ -2,7 +2,59 @@
 import json
 import pandas as pd
 
-outputs_files = ["scan_results/scan_terraform_checkov_output/results_json.json",
+all_files = ["terraform/alicloud/bucket.tf",
+"terraform/alicloud/provider.tf",
+"terraform/alicloud/rds.tf",
+"terraform/alicloud/trail.tf",
+"terraform/aws/consts.tf",
+"terraform/aws/db-app.tf",
+"terraform/aws/ec2.tf",
+"terraform/aws/ecr.tf",
+"terraform/aws/eks.tf",
+"terraform/aws/elb.tf",
+"terraform/aws/es.tf",
+"terraform/aws/iam.tf",
+"terraform/aws/kms.tf",
+"terraform/aws/lambda.tf",
+"terraform/aws/neptune.tf",
+"terraform/aws/providers.tf",
+"terraform/aws/rds.tf",
+"terraform/aws/resources/customer-master.xlsx",
+"terraform/aws/resources/Dockerfile",
+"terraform/aws/resources/lambda_function_payload.zip",
+"terraform/aws/s3.tf",
+"terraform/azure/aks.tf",
+"terraform/azure/application_gateway.tf",
+"terraform/azure/app_service.tf",
+"terraform/azure/instance.tf",
+"terraform/azure/key_vault.tf",
+"terraform/azure/logging.tf",
+"terraform/azure/mssql.tf",
+"terraform/azure/networking.tf",
+"terraform/azure/policies.tf",
+"terraform/azure/provider.tf",
+"terraform/azure/random.tf",
+"terraform/azure/resource_group.tf",
+"terraform/azure/roles.tf",
+"terraform/azure/security_center.tf",
+"terraform/azure/sql.tf",
+"terraform/azure/storage.tf",
+"terraform/azure/variables.tf",
+"terraform/gcp/big_data.tf",
+"terraform/gcp/gcs.tf",
+"terraform/gcp/gke.tf",
+"terraform/gcp/instances.tf",
+"terraform/gcp/networks.tf",
+"terraform/gcp/provider.tf",
+"terraform/gcp/README.md",
+"terraform/gcp/variables.tf",
+"terraform/oracle/bucket.tf",
+"terraform/oracle/compartment.tf",
+"terraform/oracle/data.tf",
+"terraform/oracle/provider.tf",
+"terraform/oracle/variables.tf"]
+
+output_files = ["scan_results/scan_terraform_checkov_output/results_json.json",
                  "scan_results/scan_terraform_semgrep_output/semgrep_results.json",
                  "scan_results/scan_terraform_terrascan_output/scan-result.json",
                  "scan_results/scan_terraform_tfsec_output/tfsec_results.json"]
@@ -15,7 +67,7 @@ pd.reset_option("all")
 
 json_data = []
 
-for file in outputs_files:
+for file in output_files:
     with open(file) as f:
         json_data.append(json.load(f))
 
@@ -85,8 +137,11 @@ display(tfsec_fc_files)
 #### evaluation ####
 print("------------------------ file joint ------------------------")
 
+all_files = pd.DataFrame(all_files, columns=["file"])
+display(all_files)
+
 print("Number of found vulnerabilites over all scans")
-aggregated_df = pd.concat([checkov_tf_fc_files, semgrep_fc_files, terrascan_vio_files, tfsec_fc_files])
+aggregated_df = pd.concat([checkov_tf_fc_files, semgrep_fc_files, terrascan_vio_files, tfsec_fc_files, all_files])
 display(pd.DataFrame(aggregated_df["file"].value_counts()))
 display(pd.DataFrame(aggregated_df["file"].value_counts()).sum())
 display(aggregated_df["file"].value_counts().plot(x=aggregated_df["file"], y=aggregated_df["file"].value_counts, kind="bar", xlabel="File", ylabel="Number of found vulnerabilites over all scans"))
