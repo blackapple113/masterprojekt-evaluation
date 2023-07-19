@@ -1,6 +1,7 @@
 #%%
 import json
 import pandas as pd
+from venn import venn
 
 all_files = ["terraform/alicloud/bucket.tf",
 "terraform/alicloud/provider.tf",
@@ -138,14 +139,22 @@ display(tfsec_fc_files)
 print("------------------------ file joint ------------------------")
 
 all_files = pd.DataFrame(all_files, columns=["file"])
-display(all_files)
 
 print("Number of found vulnerabilites over all scans")
-aggregated_df = pd.concat([checkov_tf_fc_files, semgrep_fc_files, terrascan_vio_files, tfsec_fc_files, all_files])
-display(pd.DataFrame(aggregated_df["file"].value_counts()))
+aggregated_df = pd.concat([checkov_tf_fc_files, semgrep_fc_files, terrascan_vio_files, tfsec_fc_files])
+aggregated_vuln = pd.DataFrame(aggregated_df["file"].value_counts())
+display(aggregated_vuln)
 display(pd.DataFrame(aggregated_df["file"].value_counts()).sum())
-display(aggregated_df["file"].value_counts().plot(x=aggregated_df["file"], y=aggregated_df["file"].value_counts, kind="bar", xlabel="File", ylabel="Number of found vulnerabilites over all scans"))
+display(aggregated_df["file"].value_counts().plot(x=aggregated_df["file"], y=aggregated_df["file"].value_counts, kind="bar", xlabel="File", ylabel="Number of found vulnerabilites over all scans", figsize=(6.5, 6.5), width=0.85))
 
+print("------------------------ venn diagram ------------------------")
+venn({
+    "checkov": set(checkov_tf_fc_files["file"].to_list()),
+    "semgrep": set(semgrep_fc_files["file"].to_list()),
+    "terrascan": set(terrascan_vio_files["file"].to_list()),
+    "tfsec": set(tfsec_fc_files["file"].to_list())},
+    fmt="{size}",
+    cmap="plasma")
 
 # %%
 
@@ -184,7 +193,3 @@ for i, uri in enumerate(semgrep_tf_community_rules["source_uri"]):
 
 # display(semgrep_tf_community_rules["source_uri"])
 # %%
-
-
-https://raw.githubusercontent.com/returntocorp/semgrep-rules/blob/release/terraform/azure/best-practice/azure-keyvault-recovery-enabled.yaml
-https://raw.githubusercontent.com/returntocorp/semgrep-rules/release/terraform/azure/best-practice/azure-keyvault-recovery-enabled.yaml
